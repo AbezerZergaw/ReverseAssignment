@@ -8,6 +8,7 @@ public class ReversCopyCat {
         Scanner input = new Scanner(System.in);
         String option = "Y";
         //Reversing number
+
         do {
 
             System.out.println("Enter number");
@@ -17,11 +18,14 @@ public class ReversCopyCat {
             //for loop will decrement i
             for (int i = num; i >= 1; i--) {
 
-                if (i % 5 == 0) {
-                    System.out.println("Copy");
+                if (i % 5 == 0 &&  i % 7 == 0) {
+                    System.out.println("CopyCat");
 
                 } else if (i % 7 == 0) {
                     System.out.println("Cat");
+                }else if(i % 5 == 0 ) {
+
+                    System.out.println("Copy");
                 }else
                     System.out.println(i);
 

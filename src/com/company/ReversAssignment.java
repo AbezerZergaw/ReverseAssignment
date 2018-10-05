@@ -32,7 +32,7 @@ public class ReversAssignment {
 
         } while (option.equalsIgnoreCase("y"));
 
-
+        System.out.println("Thank you for playing! ");
     }
 
 }

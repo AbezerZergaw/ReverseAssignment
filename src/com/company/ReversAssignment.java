@@ -9,14 +9,14 @@ public class ReversAssignment {
 
         Scanner input = new Scanner(System.in);
         String option = "Y";
-
+//Reversing number
         do {
 
             System.out.println("Enter number");
-
+            //user input
             int num = input.nextInt();
             input.nextLine();
-
+            //for loop will decrement i
             for (int i = num; i > 1; i--) {
 
                 if (i % 5 == 0) {
@@ -27,8 +27,8 @@ public class ReversAssignment {
                 }
             }
             System.out.println("Would you like to enter another number (y/n) ");
-
-            option=input.nextLine();
+            //user will have option to continue
+            option = input.nextLine();
 
         } while (option.equalsIgnoreCase("y"));
 
